@@ -12,20 +12,19 @@ const PreLoader: React.FC = () => {
                 opacity: 1,
                 ease: "Power3.easeOut",
             })
-                .from(".texts-container span", {
-                    duration: 1.5,
-                    delay: 1,
-                    y: 70,
+                .from(".texts-container span, .texts-container div", {
+                    duration: 0.4,
+                    delay: 0.1,
+                    y: 100,
                     skewY: 10,
                     stagger: 0.4,
-                    ease: "Power3.easeOut",
+                    ease: "Power3.easeOut"
                 })
-                .to(".texts-container span", {
+                .to(".texts-container span, .texts-container div", {
                     duration: 1,
-                    y: 70,
-                    skewY: -20,
-                    stagger: 0.2,
-                    ease: "Power3.easeOut",
+                    y: -100,
+                    skewY: 4,
+                    stagger: 0.2
                 })
                 .to("body", {
                     duration: 0.01,
@@ -35,7 +34,7 @@ const PreLoader: React.FC = () => {
                 .from(".sub", {
                     duration: 1,
                     opacity: 0,
-                    y: 80,
+                    y: 110,
                     ease: "expo.easeOut",
                 })
                 .to(
@@ -50,8 +49,10 @@ const PreLoader: React.FC = () => {
                 )
                 .to(".preloader", {
                     duration: 0,
-                    css: { display: "none" },
-                });
+                    css: { display: "hidden" },
+                })
+                
+                ;
         };
 
         const mobileLanding = () => {
@@ -67,7 +68,7 @@ const PreLoader: React.FC = () => {
         };
 
         preLoaderAnim();
-    }, []); // Empty dependency array to run the animation only on mount
+    }, []);
 
     return (
         <div
@@ -91,12 +92,16 @@ const PreLoader: React.FC = () => {
             <div
                 className="texts-container w-500 flex h-60 items-center justify-center gap-[5px] overflow-hidden text-[14px] font-bold text-[#e4ded7] opacity-0 sm:gap-[10px] sm:text-[16px] md:text-[18px] lg:text-[20px]"
                 style={{
-                    height: "60px",
+                    height: "80px",
+                    display: "grid"
                 }}
             >
-                <span>Developer</span>
-                <span> / </span>
-                <span>Designer</span>
+                <span style={{justifySelf: "center"}}> Gabriela Porto </span>
+                <div style={{display:"block"}}>
+                    <span> Web Developer</span>
+                    <span> / </span>
+                    <span> Data Analyst</span>
+                </div>
                 <div className="sub hidden"></div>
             </div>
         </div>

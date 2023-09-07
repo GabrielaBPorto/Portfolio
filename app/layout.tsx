@@ -11,11 +11,11 @@ const syne = Syne({
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://www.seekvisualartist.com/"),
-    title: "Seek Visual Artist",
+    title: "Gabriela Porto",
     description:
-    "Hobby Designer and Software Engineer, currently at Neumann Kaffee Gruppe. Focused on immersive experiences, studying in Hamburg, Germany.",
+    "Web developer with a bachelor's degree in Biomedical Informatics that lives in Curitiba, Brazil.",
     generator: "Next.js",
-    applicationName: "Seek Visual Artist",
+    applicationName: "Portfólio Gabriela Porto",
     keywords: [
         "Seek Visual Artist",
         "SeekVA",

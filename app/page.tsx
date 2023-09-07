@@ -59,8 +59,8 @@ export default function Home() {
         <>
             <PreLoader />
             <Blur />
-            <Color />
-            <NavBar />
+            {/* <Color />
+            <NavBar /> */}
             {/*<ScrollerMotion // Weird, stuff happening with this
                 disabled={isMobile}
                 spring={{ mass: 1, stiffness:800, bounce: 300, damping: 100 }}
@@ -69,12 +69,12 @@ export default function Home() {
                 className="flex flex-col items-center justify-center bg-black"
             >
                 <Hero />
-                <About />
+                {/*<About />
                 <Work />
-                <Tools />
+                <Tools /> */}
                 { /* <Blog /> TODO: Low Priority */ }
-                <Contact />
-                <Footer />
+                {/* <Contact />
+                <Footer /> */}
             </main>
             {/*</ScrollerMotion>*/}
         </>
