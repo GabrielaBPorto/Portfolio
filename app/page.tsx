@@ -2,6 +2,7 @@
 import React, {useState} from "react";
 import { ScrollerMotion } from "scroller-motion";
 import { useEffectOnce, useEventListener } from 'usehooks-ts';
+import HeroBackground from "./components/background/HeroBackground";
 
 import PreLoader from "./components/other/PreLoader";
 import useBlobity from "./components/blobity/useBlobity";
@@ -32,26 +33,18 @@ export default function Home() {
     useEventListener('resize', () => {
         setIsMobile(window.innerWidth < 768);
     });
-
+    // , a:not([data-no-blobity]), h4:not([data-no-blobity]), li:not([data-no-blobity]), button:not([data-no-blobity]), [data-blobity-tooltip]
     useBlobity(
         {
             licenseKey: "opensource",
-            focusableElementsOffsetX: 4,
-            focusableElementsOffsetY: 4,
             color: "#ffffff",
             dotColor: "#ffffff",
-            invert: true,
             focusableElements:
-                "[data-blobity], a:not([data-no-blobity]), h4:not([data-no-blobity]), li:not([data-no-blobity]), button:not([data-no-blobity]), [data-blobity-tooltip]",
-            font: "'Montserrat','Source Sans Pro',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif",
-            fontSize: 16,
-            fontWeight: 900,
-            opacity: 1.0,
-            fontColor: "#ffffff",
-            zIndex: 35,
-            size: 50,
-            radius: 5,
-            magnetic: false,
+                "a, h4:not([data-no-blobity])",
+            zIndex: 10,
+            size: 100,
+            radius: 20,
+            magnetic: false
         }
     );
 
@@ -59,16 +52,11 @@ export default function Home() {
         <>
             <PreLoader />
             <Blur />
-            {/* <Color />
-            <NavBar /> */}
-            {/*<ScrollerMotion // Weird, stuff happening with this
-                disabled={isMobile}
-                spring={{ mass: 1, stiffness:800, bounce: 300, damping: 100 }}
-            >*/}
+            <NavBar />
             <main
-                className="flex flex-col items-center justify-center bg-black"
+                className="my-0 mx-0 py-0 px-0"
             >
-                <Hero />
+                <HeroBackground />
                 {/*<About />
                 <Work />
                 <Tools /> */}

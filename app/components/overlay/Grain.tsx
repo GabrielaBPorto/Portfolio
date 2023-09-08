@@ -8,8 +8,8 @@ type GrainProps = {
 };
 
 const Grain: React.FC<GrainProps> = ({
-    baseFrequency = "9",
-    numOctaves = 5,
+    baseFrequency = "1",
+    numOctaves = 2,
     w = "100%",
     h = "100%",
 }) => {
@@ -20,7 +20,6 @@ const Grain: React.FC<GrainProps> = ({
             xmlns="http://www.w3.org/2000/svg"
             width={w}
             height={h}
-            viewBox={viewBox}
             preserveAspectRatio="none"
         >
             <filter id="noiseFilter">
@@ -30,7 +29,9 @@ const Grain: React.FC<GrainProps> = ({
                     numOctaves={numOctaves}
                 />
             </filter>
-            <rect width="100%" height="100%" filter="url(#noiseFilter)" />
+            <text x="50%" y="50%" textAnchor="middle" fontSize="200" filter="url(#noiseFilter)">
+                *
+            </text>
         </svg>
     );
 };

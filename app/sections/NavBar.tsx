@@ -33,11 +33,11 @@ const NavBar = () => {
                         aria-label="Scroll to Home Section"
                     >
                         <h4 className="py-2 px-2 text-[12px] sm:px-4 sm:text-[14px] md:py-1 md:px-4">
-              HOME
+              Home
                         </h4>
                     </Link>
 
-                    <Link
+                    {/* <Link
                         href="#about"
                         data-blobity-magnetic="false"
                         onClick={handleScroll}
@@ -68,7 +68,7 @@ const NavBar = () => {
                         <h4 className="py-2 px-2 text-[12px] sm:px-4 sm:text-[14px] md:py-1 md:px-4">
               CONTACT
                         </h4>
-                    </Link>
+                    </Link> */}
                 </nav>
             </Container>
         </nav>

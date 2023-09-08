@@ -13,7 +13,7 @@ const PreLoader: React.FC = () => {
                 ease: "Power3.easeOut",
             })
                 .from(".texts-container span, .texts-container div", {
-                    duration: 0.4,
+                    duration: 0.3,
                     delay: 0.1,
                     y: 100,
                     skewY: 10,
@@ -21,7 +21,7 @@ const PreLoader: React.FC = () => {
                     ease: "Power3.easeOut"
                 })
                 .to(".texts-container span, .texts-container div", {
-                    duration: 1,
+                    duration: 0.3,
                     y: -100,
                     skewY: 4,
                     stagger: 0.2
@@ -32,7 +32,7 @@ const PreLoader: React.FC = () => {
                     ease: "power3.inOut",
                 })
                 .from(".sub", {
-                    duration: 1,
+                    duration: 0.9,
                     opacity: 0,
                     y: 110,
                     ease: "expo.easeOut",
@@ -40,7 +40,7 @@ const PreLoader: React.FC = () => {
                 .to(
                     ".preloader",
                     {
-                        duration: 1.5,
+                        duration: 0.5,
                         height: "0vh",
                         ease: "Power3.easeOut",
                         onComplete: mobileLanding,
@@ -69,6 +69,7 @@ const PreLoader: React.FC = () => {
 
         preLoaderAnim();
     }, []);
+    
 
     return (
         <div
@@ -87,6 +88,7 @@ const PreLoader: React.FC = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 overflow: "hidden !important",
+                opacity:0.8
             }}
         >
             <div
