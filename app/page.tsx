@@ -11,7 +11,7 @@ import Blur from "./components/overlay/Blur";
 import Color from "./components/overlay/Color";
 
 import NavBar from "./sections/NavBar";
-import Hero from "./sections/Hero";
+import HomeTitle from "./sections/HomeTitle.tsx";
 import About from "./sections/About";
 import Work from "./sections/Work";
 import Contact from "./sections/Contact";
@@ -33,7 +33,6 @@ export default function Home() {
     useEventListener('resize', () => {
         setIsMobile(window.innerWidth < 768);
     });
-    // , a:not([data-no-blobity]), h4:not([data-no-blobity]), li:not([data-no-blobity]), button:not([data-no-blobity]), [data-blobity-tooltip]
     useBlobity(
         {
             licenseKey: "opensource",
@@ -57,6 +56,7 @@ export default function Home() {
                 className="my-0 mx-0 py-0 px-0"
             >
                 <HeroBackground />
+                <HomeTitle />
                 {/*<About />
                 <Work />
                 <Tools /> */}
