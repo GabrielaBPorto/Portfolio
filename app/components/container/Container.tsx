@@ -1,7 +1,5 @@
 import React, { useState, useRef } from "react";
-import Grain from "../overlay/Grain";
 import "./container.css";
-import {useEventListener} from "usehooks-ts";
 
 type CustomCSSProperties = React.CSSProperties & {
     "--width"?: string | number;

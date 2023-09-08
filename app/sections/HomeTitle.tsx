@@ -10,7 +10,7 @@ const HomeTitle = () => {
         Gabriela Bairros Porto
     </h1>
     <h3 className="text-center whitespace-nowrap text-2xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-100 to-indigo-700">
-        Desenvolvedora Web / Data Analyst
+        Web Developer / Data Analyst
     </h3>
 </section>
     );

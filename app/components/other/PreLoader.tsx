@@ -5,7 +5,6 @@ const PreLoader: React.FC = () => {
     useEffect(() => {
         const tl = gsap.timeline();
 
-        // Preloader Animation
         const preLoaderAnim = () => {
             tl.to(".texts-container", {
                 duration: 0,
