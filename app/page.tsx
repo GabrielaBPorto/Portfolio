@@ -7,7 +7,6 @@ import HeroBackground from "./components/background/HeroBackground";
 import gsap from "gsap";
 
 import PreLoader from "./components/other/PreLoader";
-import useBlobity from "./components/blobity/useBlobity";
 
 
 import NavBar from "./sections/NavBar";
@@ -20,35 +19,19 @@ import Tools from "./sections/Tools.tsx";
 // import {Router} from "next/router"
 
 export default function Home() {
-    gsap.set(['nav','#home','#about', '#work', '#skills', '#projects'], { opacity: 0 });
-    
-    // console.log('router', new Router('','',{}))
-
-    const [isMobile, setIsMobile] = useState(false);
-    useEffect(() => {
-            window.scrollTo({
-                top: 0,
-                left: 0,
-            });
-            setIsMobile(window.innerWidth < 768);
-    }, []);
-
-    useEventListener('resize', () => {
-        setIsMobile(window.innerWidth < 768);
-    });
-    useBlobity(
-        {
-            licenseKey: "opensource",
-            color: "#1A202C",
-            focusableElements:
-                "a, h4:not([data-no-blobity])",
-            zIndex: 1000,
-            size: 100,
-            radius: 20,
-            magnetic: false
+    const returnSectionVisibility = ((name: string) => {
+        if(currentSection && (currentSection === '' || currentSection===name)){
+            return 'visible'
         }
-    );
+        else {
+            return 'invisible'
+        }
+    })
+    const [currentSection, setCurrentSection ] = useState<string | null>(null);
+    setCurrentSection(window.location.hash.split("#")[1])
+    useEffect(() => {
 
+    })
     return (
         <>
             <PreLoader />
@@ -57,7 +40,7 @@ export default function Home() {
                 className="my-0 mx-0 py-0 px-0"
             >
                 <HeroBackground />
-                <HomeTitle />
+                <HomeTitle className={` ${}`}/>
                 
                 <About />
 {/*                <Work />

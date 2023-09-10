@@ -17,3 +17,36 @@
     --angle: 0;
 } */
 
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[3]!./app/sections/CircleItem.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+/* CircleItem.module.css */
+.CircleItem_planetCircle__sqEtg {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* box-shadow: 0px 0px 50px 15px rgba(63,94,251,0.5); */
+  position: relative;
+  overflow: hidden;
+}
+
+.CircleItem_aboutMePlanet__kDADI {
+  box-shadow: 0px 0px 50px 15px rgba(150,4,4,0.5);
+  background-image: 
+    url('/um-fundo-vermelho-com-ondas-e-um-padrao-de-ondas.jpg');
+  background-repeat: 
+    repeat ;
+  background-size: 
+    cover;
+  background-position: 
+    center;
+}
+
+.CircleItem_professionalExperiencePlanet__6x3bM {
+  background: radial-gradient(circle, rgba(252,176,69,1) 0%, rgba(10,24,61,1) 100%);
+}
+
+.CircleItem_academicExperiencePlanet__KA0z3 {
+  background: radial-gradient(circle, rgba(76,209,55,1) 0%, rgba(131,58,180,1) 100%);
+}
+

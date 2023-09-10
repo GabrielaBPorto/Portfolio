@@ -1,0 +1,26 @@
+Olá!
+Meu nome é Gabriela Porto e eu trabalho com desenvolvimento de software.
+Finalizando o curso de Bacharelado de Informática Biomédica (https://web.inf.ufpr.br/infobiomedica) na UFPR, 
+e se você não conhece o curso pelo nome, não se preocupe, poucos conhecem. Ele é um dos poucos cursos dos 3 existentes que tenta trabalhar dentro de uma área de interdisciplinariedade entre a 
+área de saúde e ciência da computação. Ou seja? Criar um profissional que consegue conversar a lingua dos desenvolvedores, mas consegue se comunicar melhor com diversos profissionais de saúde.
+Basicamente um intercampo, para conseguir desenvolver sistemas melhores.
+Conforme fui explorando minhas oportunidades na Faculdade, trabalhei duas vertentes: A acadêmica e profissional.
+Atualmente estou trabalhando na minha Monografia (link para algumas informações?) que envolve fazer o uso de aprendizado de máquina para conseguir definir com uma melhor precisão o horário de alteração entre trocas de fases do sono, mas já trabalhei em diversas iniciações científicas como:
+- Fall Tips - Grupo de pesquisa da área de enfermagem com o âmbito de diminuir quedas dentro do ambiente hospitalar.
+- PET Computação - Grupo de pesquisa, extensão e tutoria, onde trabalhei em projetos como: Oficina de Vestibulandos; 
+Onde também aprendi a respeito de:
+- Algoritmos e estruturas de dados;
+- Sistemas Operacionais;
+- Sistemas de banco de Dados;
+- Técnicas alternativas de programação;
+- Processamento de imagens;
+- Inteligência artificial e aprendizado de máquina;
+- Otimização de computação cientifica.
+- Engenharia de requisitos.
+
+Muito desses conhecimentos desenvolvidos eu utilizo-os bastante dentro do meu âmbito profissional.
+
+Ao mesmo tempo que estive na faculdade, aproveitei para direcionar parte de meus aprendizados
+para a minha carreira profissional, participando de uma quantidade de estágios e hoje trabalho como desenvolvedora web, e de maneira parecida com a acadêmica, tentei sempre aprender de tudo um pouco de tecnologia. Em primeira oportunidade trabalhei com um sistema legado relativamente complexo pela quantidade diferente de funcionalidades que estavam interconectadas e eram disponibilizadas, o sistema de gerenciamento de iluminação pública envolvia-se com uma grande quantidade de dados, e me amadureceu não somente me dando uma oportunidade de fazer o uso da teoria aprendida em um ambiente prático, mas sobre como eu trabalho, como também me fez entender as demandas de logísticas e como elas funcionando.
+
+Atualmente eu não trabalho com desenvolvimento para área de saúde, pois acredito que possui muitas áreas que eu possa vir a trabalhar, no entanto com as minhas prévias experiências aprendi como funcionam demandas de stakeholders de próximo, e hoje consigo visualizar o meu trabalho como uma desenvolvedora de sistemas de logística, que eventualmente venham a se tornar tão integrados no uso da nossa sociedaed como o GPS se tornou.

@@ -3,24 +3,20 @@ import Link from "next/link";
 import Container from "../components/container/Container";
 import React, {useState, useEffect} from "react";
 import gsap from "gsap";
-import { useRouter } from "next/router";
+import { useEffectOnce } from "usehooks-ts";
 
 
 
 const NavBar = () => {
     const [currentSection, setCurrentSection] = useState<string | null>(null);
     const tl = gsap.timeline();
-    // query is now typed as `{ foo: string }`
-    try{
-        const route = useRouter();    
-        console.log('route', route)
-    }
-    catch(e){
-        console.log(e,'e')
-    }
-    
+
+    useEffectOnce(() =>{
+        setCurrentSection( window.location.hash.substring(1)|| 'home');
+    })
     
     const handleSectionChange =(() =>{
+        gsap.set(['#home','#about','planets','#projects','#work'], { opacity: 0 });
         gsap.to(`#${currentSection}`, { duration: 1, delay: 2.6, opacity:1, ease: "Power3.easeOut" });
         gsap.to(`nav`, { duration: 1, delay: 2.8, opacity:1, ease: "Power3.easeOut" });
     })
@@ -29,18 +25,11 @@ const NavBar = () => {
         if (currentSection) {
             handleSectionChange();
         }
-      }, [currentSection]);
-      useEffect(() =>{
-        
-      }, [])
+        }, [currentSection]);
     const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-        // e.preventDefault();
-        // const href = e.currentTarget.href.split("#")[1];
-        // window.scrollTo({
-        //     top: document.getElementById(href)?.offsetTop,
-        //     left: 0,
-        //     behavior: "smooth",
-        // });
+        console.log('oi?', e.currentTarget.href.split("#")[1])
+        setCurrentSection(e.currentTarget.href.split("#")[1]);
+        handleSectionChange()
     };
 
     return (
