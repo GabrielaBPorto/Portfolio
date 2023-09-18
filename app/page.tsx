@@ -43,11 +43,10 @@ export default function Home() {
                 <HomeTitle />
                 
                 <About />
-{/*                <Work />
-                <Tools /> */}
-                { /* <Blog /> TODO: Low Priority */ }
-                {/* <Contact />
-                <Footer /> */}
+                <Work />
+                <Tools />
+                <Contact />
+                {/*<Footer /> */}
             </main>
             {/*</ScrollerMotion>*/}
         </>
