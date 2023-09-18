@@ -28,10 +28,10 @@ export default function Home() {
         }
     })
     const [currentSection, setCurrentSection ] = useState<string | null>(null);
-    setCurrentSection(window.location.hash.split("#")[1])
+    
     useEffect(() => {
-
-    })
+        setCurrentSection(window.location.hash.split("#")[1])
+    }, [])
     return (
         <>
             <PreLoader />
@@ -40,7 +40,7 @@ export default function Home() {
                 className="my-0 mx-0 py-0 px-0"
             >
                 <HeroBackground />
-                <HomeTitle className={` ${}`}/>
+                <HomeTitle />
                 
                 <About />
 {/*                <Work />
