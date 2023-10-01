@@ -12,44 +12,44 @@ const PreLoader: React.FC = () => {
                 ease: "Power3.easeOut",
             })
                 .from(".texts-container span, .texts-container div", {
-                    duration: 0.3,
-                    delay: 0.1,
+                    duration: 0.5,
+                    delay: 0.3,
                     y: 100,
                     skewY: 10,
-                    stagger: 0.4,
+                    stagger: 0.2,
                     ease: "Power3.easeOut"
                 })
-                .to(".texts-container span, .texts-container div", {
-                    duration: 0.3,
-                    y: -100,
-                    skewY: 4,
-                    stagger: 0.2
-                })
-                .to("body", {
-                    duration: 0.01,
-                    css: { overflowY: "scroll" },
-                    ease: "power3.inOut",
-                })
-                .from(".sub", {
-                    duration: 0.9,
-                    opacity: 0,
-                    y: 110,
-                    ease: "expo.easeOut",
-                })
-                .to(
-                    ".preloader",
-                    {
-                        duration: 0.5,
-                        height: "0vh",
-                        ease: "Power3.easeOut",
-                        onComplete: mobileLanding,
-                    },
-                    "-=2"
-                )
-                .to(".preloader", {
-                    duration: 0,
-                    css: { display: "hidden" },
-                })
+                // .to(".texts-container span, .texts-container div", {
+                //     duration: 0.3,
+                //     y: -100,
+                //     skewY: 4,
+                //     stagger: 0.2
+                // })
+                // .to("body", {
+                //     duration: 0.01,
+                //     css: { overflowY: "scroll" },
+                //     ease: "power3.inOut",
+                // })
+                // .from(".sub", {
+                //     duration: 0.9,
+                //     opacity: 0,
+                //     y: 110,
+                //     ease: "expo.easeOut",
+                // })
+                // .to(
+                //     ".preloader",
+                //     {
+                //         duration: 0.5,
+                //         height: "0vh",
+                //         ease: "Power3.easeOut",
+                //         onComplete: mobileLanding,
+                //     },
+                //     "-=2"
+                // )
+                // .to(".preloader", {
+                //     duration: 0,
+                //     css: { display: "hidden" },
+                // })
                 
                 ;
         };
@@ -72,17 +72,15 @@ const PreLoader: React.FC = () => {
 
     return (
         <div
-            className="preloader gap-[5px] overflow-hidden text-[14px] sm:gap-[10px] sm:text-[16px] md:text-[18px] lg:text-[20px]"
+            className="preloader gap-[5px] text-[14px] sm:gap-[10px] sm:text-[16px] md:text-[18px] lg:text-[20px]"
             style={{
                 height: "100vh",
                 width: "100%",
                 background: "#000000",
                 color: "#e5ebf2",
                 position: "fixed",
-                bottom: 0,
                 left: 0,
-                right: 0,
-                zIndex: 55,
+                zIndex: 1,
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",

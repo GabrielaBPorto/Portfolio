@@ -3,12 +3,13 @@ import Image from "next/image"
 
 const HeroBackground: React.FC = () => {
     return (
-        <div className="absolute inset-0">
+        <div className="absolute h-full w-full">
                 <Image
-                className="h-full w-full object-cover"
-                src="/background.svg"
+                src="/assets/images/backgrounds/background.svg"
                 alt="Background"
-                layout="fill"
+                layout="full"
+                width={1080}
+                height={100}
             />
         </div>
     );

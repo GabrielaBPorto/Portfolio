@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import UnderConstruction from '../components/Common/UnderConstruction';
+import PreLoader from '../components/Common/PreLoader';
+import Background from '../components/Common/Background';
 import { SectionVisibility, SectionComponents } from '../enums/SectionVisibility.enum';
 import Home from '../components/Sections/Home';
 import About from '../components/Sections/About';
@@ -12,6 +14,7 @@ const RootLayout: React.FC = ({ children }) => {
   useEffect(() => {
     const it = router.query;
     setCurrentSection(it.section as SectionVisibility);
+    setShowPreloader(true);
   }, [router.asPath]);
 
   const renderSection = () => {
@@ -40,11 +43,13 @@ const RootLayout: React.FC = ({ children }) => {
       
     }
   };
+  const [showPreloader, setShowPreloader] = useState(false);
 
   return (
-    <div>
-      {renderSection()}
-      {children}
+    <div className="background-container">
+      {showPreloader && <PreLoader />}
+      {/* {renderSection()}
+      {children} */}
     </div>
   );
 };
