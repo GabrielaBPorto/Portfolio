@@ -1,2 +1,32 @@
+# dependencies
 node_modules/
+
+# Next.js build output
 .next/
+
+# log files
+*.log
+
+# runtime data
+*.pid
+*.seed
+*.pid.lock
+
+# IDE directories
+.idea/
+.vscode/
+
+# System Files
+.DS_Store
+
+
+# Next.js
+.next/
+out/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# ESLint
+.eslintcache
