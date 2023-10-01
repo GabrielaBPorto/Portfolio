@@ -1,0 +1,48 @@
+import type { Metadata } from "next";
+import { Syne } from "next/font/google";
+
+
+const syne = Syne({
+    subsets: ["latin"],
+    display: "block",
+    weight: ["400", "500", "600", "700", "800"],
+});
+
+export const metadata: Metadata = {
+    metadataBase: new URL("https://www.seekvisualartist.com/"),
+    title: "Gabriela Porto",
+    description:
+    "Web developer with a bachelor's degree in Biomedical Informatics that lives in Curitiba, Brazil.",
+    generator: "Next.js",
+    applicationName: "Portfólio Gabriela Porto",
+    keywords: [
+        "Seek Visual Artist",
+        "SeekVA",
+        "Seek Design",
+        "Seek Visuals",
+        "freelance",
+        "developer",
+        "freelance developer",
+        "frontend",
+        "nextjs",
+        "astro",
+        "react",
+        "frontend developer",
+        "frontend engineer",
+        "creative",
+        "creative developer",
+        "creative engineer",
+        "tech",
+        "germany",
+        "software",
+        "software developer",
+        "portfolio",
+        "frontend developer portfolio",
+        "creative developer portfolio",
+        "creative engineer portfolio",
+        "software developer portfolio",
+        "frontend engineer portfolio",
+    ],
+    colorScheme: "dark",
+    category: "technology",
+};

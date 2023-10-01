@@ -2,9 +2,9 @@
 import React, {useState, useEffect} from "react";
 import { ScrollerMotion } from "scroller-motion";
 import { useEventListener } from 'usehooks-ts';
-import { Router, useRouter } from 'next/router';
 import HeroBackground from "./components/background/HeroBackground";
 import gsap from "gsap";
+import { useRouter } from 'next/navigation'
 
 import PreLoader from "./components/other/PreLoader";
 
@@ -16,25 +16,11 @@ import Work from "./sections/Work";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Tools from "./sections/Tools.tsx";
-// import {Router} from "next/router"
 
 export default function Home() {
-    const returnSectionVisibility = ((name: string) => {
-        if(currentSection && (currentSection === '' || currentSection===name)){
-            return 'visible'
-        }
-        else {
-            return 'invisible'
-        }
-    })
-    const [currentSection, setCurrentSection ] = useState<string | null>(null);
-    
-    useEffect(() => {
-        setCurrentSection(window.location.hash.split("#")[1])
-    }, [])
     return (
         <>
-            <PreLoader />
+            {/* <PreLoader />
             <NavBar />
             <main
                 className="my-0 mx-0 py-0 px-0"
@@ -45,10 +31,13 @@ export default function Home() {
                 <About />
                 <Work />
                 <Tools />
-                <Contact />
+                <Contact /> */}
                 {/*<Footer /> */}
-            </main>
+            {/* </main> */}
             {/*</ScrollerMotion>*/}
+            <div>
+                Teste
+            </div>
         </>
     );
 }
