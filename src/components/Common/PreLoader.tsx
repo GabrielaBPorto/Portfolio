@@ -19,37 +19,37 @@ const PreLoader: React.FC = () => {
                     stagger: 0.2,
                     ease: "Power3.easeOut"
                 })
-                // .to(".texts-container span, .texts-container div", {
-                //     duration: 0.3,
-                //     y: -100,
-                //     skewY: 4,
-                //     stagger: 0.2
-                // })
-                // .to("body", {
-                //     duration: 0.01,
-                //     css: { overflowY: "scroll" },
-                //     ease: "power3.inOut",
-                // })
-                // .from(".sub", {
-                //     duration: 0.9,
-                //     opacity: 0,
-                //     y: 110,
-                //     ease: "expo.easeOut",
-                // })
-                // .to(
-                //     ".preloader",
-                //     {
-                //         duration: 0.5,
-                //         height: "0vh",
-                //         ease: "Power3.easeOut",
-                //         onComplete: mobileLanding,
-                //     },
-                //     "-=2"
-                // )
-                // .to(".preloader", {
-                //     duration: 0,
-                //     css: { display: "hidden" },
-                // })
+                .to(".texts-container span, .texts-container div", {
+                    duration: 0.3,
+                    y: -100,
+                    skewY: 4,
+                    stagger: 0.2
+                })
+                .to("body", {
+                    duration: 0.01,
+                    css: { overflowY: "scroll" },
+                    ease: "power3.inOut",
+                })
+                .from(".sub", {
+                    duration: 0.9,
+                    opacity: 0,
+                    y: 110,
+                    ease: "expo.easeOut",
+                })
+                .to(
+                    ".preloader",
+                    {
+                        duration: 0.5,
+                        height: "0vh",
+                        ease: "Power3.easeOut",
+                        onComplete: mobileLanding,
+                    },
+                    "-=2"
+                )
+                .to(".preloader", {
+                    duration: 0,
+                    css: { display: "hidden" },
+                })
                 
                 ;
         };
